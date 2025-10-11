@@ -66,8 +66,14 @@ form input {
     width: 93%;
     background: #030762;
     color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px 0px;
 }
-
+.login .mybtn a {
+    text-decoration: none;
+    color: #ffffff;
+}
 form .forgetpassword {
     width: 40%;
     margin: 10px auto;
