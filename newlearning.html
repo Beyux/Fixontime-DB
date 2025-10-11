@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newlearning.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>new blog</title>
+</head>
+<body>
+    <main>
+        <section id="menu">
+            <div class="logo">
+                <img src="images/FixOnTime-whitetrans 1.png" alt="">
+            </div>
+    
+            <div class="items">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="e-learning.html">E-learning</a></li>
+                <li><a href="subsciber.html">Subscriber</a></li>
+            </div>
+    
+        </section>
+
+        <div id="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+        <section id="interface">
+            <div class="navigation">
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+                
+            </div>
+          <div class="container">
+                
+                <div class="post">
+                    <h2>E-Learning</h2>
+                </div>
+    
+                <div class="board">
+    
+                    <h3>Add new post</h3>
+    
+                    <div class="newpost">
+    
+                        <form action="">
+                            <label for="tittle">Tittle</label> <br>
+                            <input type="tittle" id="tittle"><br><br>
+    
+                            <label for="thumbnail">Thumbnail image</label> <br>
+                            <input class="thumb-nail" type="text" id="images">
+    
+                            <button class="browse-btn">Browse</button><br><br>
+    
+                            <label for="">Video link</label> <br>
+                            <input type="text" id="text">
+                            
+                            <button class="cancel-btn">Cancel</button>
+                            <button class="ok-btn">Ok</button>
+                        </form>
+                        
+    
+                    </div>
+                </div>
+    
+            </div>  
+            
+        </section>
+    </main>
+
+
+    <script>
+
+        const toggleBtn = document.getElementById('toggle-btn');
+        const menuBtn = document.getElementById('menu');
+    
+        toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+    
+        </script>
+</body>
+</html>

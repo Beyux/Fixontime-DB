@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contactinfo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="menu">
+            <div class="logo">
+                <img src="images/FixOnTime-whitetrans 1.png" alt="">
+            </div>
+    
+            <div class="items">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="e-learning.html">E-learning</a></li>
+                <li><a href="subsciber.html">Subscriber</a></li>
+            </div>
+    
+        </section>
+        
+        <div id="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+
+        <section id="interface">
+            <div class="navigation">
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+                
+            </div>
+          <div class="container">
+                
+                <div class="contact-list">
+                    <h2>Contact</h2>
+                    
+                </div>
+               
+                <div class="board">
+    
+                    <h3>Contact information</h3>
+    
+                    <div class="details">
+    
+                        <h5>Name</h5>
+                        <p>Akinyemi Ayomide</p>
+    
+                        <h5>Company name</h5>
+                        <p>Akin international</p>
+    
+                        <h5>Email</h5>
+                        <p>akinsinternation@gmail.com</p>
+    
+                        <h5>Subject</h5>
+                        <p>Home connection and repair</p>
+    
+                        <h5>Message</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi numquam tempora molestias. Perspiciatis quasi consequuntur alias quos officia modi expedita tempora neque et asperiores fuga, illum commodi maiores iusto nihil.</p>
+                        
+                        <button class="btn">Ok</button>
+                    </div>
+                </div>
+    
+                
+    
+            </div>  
+            
+        </section>
+    </main>
+    
+
+    <script>
+
+        const toggleBtn = document.getElementById('toggle-btn');
+        const menuBtn = document.getElementById('menu');
+    
+        toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+    
+        </script>
+</body>
+</html>

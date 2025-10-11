@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+#menu {
+    width: 15.5%;
+    background:  #030762;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+#menu .logo {
+    margin-top: 30px;
+    align-items:center;
+    text-align: center;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li {
+    list-style: none;
+    padding: 15px 20px;
+    transition: 0.3s ease;
+    
+}
+
+#menu .items li:nth-child(5):before {
+    content: url(images/Frame\ 4.png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+    
+}
+#menu .items li:nth-child(2):before {
+    content: url(images/Frame\ \(1\).png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+}
+#menu .items li:nth-child(3):before {
+    content: url(images/Frame\ \(2\).png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+}
+#menu .items li:nth-child(4):before {
+    content: url(images/Frame\ \(3\).png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+}
+#menu .items li:nth-child(1):before {
+    content: url(images/Frame.png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+    
+}
+
+#menu .items li:hover{
+    background:#8e90ca4d;  
+    cursor: pointer;
+ 
+ }
+ #menu .items li.active{
+    background: #1e2276;  
+    cursor: pointer;
+    border-left: 4px solid red;
+ 
+ }
+  
+
+#menu .items li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400px;
+    transition: 0.3s ease;
+}
+#interface {
+    width: 84.5%;
+    position: relative;
+    margin-left: 15.5%;
+}
+
+#interface  .container{
+    width: 95%;
+    margin: 0 auto;
+
+}
+#interface .navigation{
+    justify-content: left;
+    position: fixed;
+    background: white;
+    width: 85%;
+    overflow-x:visible;
+    z-index: 1;
+    top: 0;
+    margin: 0;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+    
+    
+}
+
+#interface .navigation .logout{
+    margin-right: 1%;
+    text-align: right;
+    padding: 20px;
+    
+}
+
+
+#interface .navigation .logout a {
+    text-decoration: none;
+    display: inline-block;
+    color: #505050;
+    padding: 0 5px;
+    font-size: 14px;  
+}
+
+#interface .navigation .logout a::before {
+    
+    content: url(images/Vector\ \(20\).png);
+    margin-right: 8px;
+    align-self: center;  
+    position: relative; 
+    top: 4px;
+}
+
+.E-learning {
+    display: flex;
+    justify-content: space-between;
+    color: #505050;
+    background-image: linear-gradient(to right, rgba(228, 118, 59, 0.197), rgba(245, 239, 70, 0.26), rgba(151, 149, 248, 0.249));
+    padding: 30px 50px;
+    margin: 20px 0;
+    margin-top: 85px;
+    border-radius: 10px;
+}
+
+.E-learning p {
+    background: #030762;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.E-learning p a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.board {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.board .post img {
+    width: 100%;
+    
+}
+.board .post {
+    position: relative;
+}
+.board .post .play {
+    position: absolute;
+    justify-self: center;
+    bottom: 50%;
+    
+}
+.board .post:nth-child(1n) img {
+    height:66%;    
+}
+.board .post h4 {
+    margin-bottom: 0;
+}
+.board .post p {
+    margin-top: 0;
+    font-size: small;
+}
+.edit-del {
+    position: absolute;
+    justify-self: center;
+    bottom: 36%;
+    justify-content: space-around;
+    gap: 20px;
+    display: flex;
+    flex-grow: inherit;
+
+}
+
+.edit-del a {
+    text-decoration: none;
+    color: #505050;
+    padding: 5px 12px;
+    background: #dedee7;
+    border-radius: 5px;
+    z-index: 1;
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    
+}
+
+.edit-del .delete::before {
+    content: url(images/Vector\ \(24\).png);
+    position: relative;
+    top: 3px;
+    padding-right: 10px;
+}
+
+.edit-del .edit {
+    background:#1e2276;
+    color: #dedee7;
+}
+
+.edit-del .edit::before {
+    content: url(images/edit.png);
+    padding-right: 10px;
+    position: relative;
+    top: 3px;
+    
+}
+
+
+#toggle-btn {
+    display: none;
+    flex-direction: column;
+    left: 10px;
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    justify-content: space-between;
+    top: 1.1rem;
+    background-color:#1e2276;
+    padding: 3px 3px;
+
+
+ }
+
+ #toggle-btn .bar {
+    width: 35px;
+    background: white;
+    height: 6px;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+ }
+
+
+ @media (max-width: 1050px) {
+    #menu {
+       position: fixed;
+       width: 180px;
+       left: -180px;
+       transition: left 0.3s ease;
+       z-index: 5;
+   }
+   
+   
+   #interface {
+       width: 100%;
+       margin-left: 0;
+   }
+
+   #interface .navigation {
+    width: 100%;
+   }
+   
+   #toggle-btn {
+       display: flex;
+        position: fixed;
+        z-index: 6;
+   }
+    
+   
+   
+   #menu.active {
+       left: 0px;
+   }
+   
+    }
+
+    @media (max-width: 920px) {
+        .board {
+            grid-template-columns: repeat(3, 1fr);
+    
+        }
+        
+        
+    
+    }
+    @media (max-width: 655px) {
+        .board {
+            grid-template-columns: repeat(2, 1fr);
+    
+        }
+    }
+
+    
+    @media (max-width: 435px) {
+        .board {
+            grid-template-columns: repeat(1, 1fr);
+    
+        }   
+    
+    }
+    

@@ -1,0 +1,121 @@
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+ }
+    
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .left-side {
+    width: 100%;
+    background-image: url(images/Rectangle\ 576.jpg);
+    background-repeat: no-repeat;
+    background-attachment: calc(100%);
+    background-size: cover;
+    background-position: inherit;
+    color: #ffffff;
+    box-sizing: border-box;
+
+}
+.logo {
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.welcome {
+    text-align: center;
+    height: 75vh;
+    align-content: center;
+}
+
+form {
+    height: 100vh;
+    align-content: center;
+    width: 100%;
+    margin: auto auto;
+    color: #505050;
+}
+form .sub-container {
+    width: 60%;
+    margin: auto;
+    padding: 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px  rgb(223, 218, 218);
+    
+}
+h3 {
+    color: #505050;
+}
+form input {
+    width: 93%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+   
+}
+.sub-container .mybtn {
+    width: 93%;
+    background-color: #030762;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.sub-container .mybtn a {
+    text-decoration: none;
+    color: white;
+}
+.sub-container h3, .sub-container p {
+    margin-bottom: 15px;
+}
+
+form .signin {
+    width: 15%;
+    margin: auto;
+}
+form .signin a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-wrap: nowrap;
+    color: #505050;
+}
+
+
+@media (max-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+    
+    
+}
+@media (max-width: 800px) {
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    
+    
+}
+@media (max-width: 727px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    
+}
+@media (max-width: 550px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+      
+}

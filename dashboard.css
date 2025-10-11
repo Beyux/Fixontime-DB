@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+ 
+ #menu {
+    width: 15.5%;
+    background:  #030762;
+    height: 100vh;
+    
+}
+
+#menu .logo {
+    margin-top: 30px;
+    align-items:center;
+    text-align: center;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li {
+    list-style: none;
+    padding: 15px 20px;
+    transition: 0.3s ease;
+    
+}
+
+#menu .items li:nth-child(5):before {
+    content: url(images/Frame\ 4.png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+    
+}
+#menu .items li:nth-child(2):before {
+    content: url(images/Frame\ \(1\).png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+}
+#menu .items li:nth-child(3):before {
+    content: url(images/Frame\ \(2\).png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+}
+#menu .items li:nth-child(4):before {
+    content: url(images/Frame\ \(3\).png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+}
+#menu .items li:nth-child(1):before {
+    content: url(images/Frame.png);
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+    
+}
+
+#menu .items li:hover{
+   background:#8e90ca4d;  
+   cursor: pointer;
+
+}
+#menu .items li.active{
+   background: #1e2276;  
+   cursor: pointer;
+   border-left: 4px solid red;
+
+}
+
+#menu .items li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400px;
+    transition: 0.3s ease;
+}
+#interface {
+    width: 84.5%;
+    position: relative;
+}
+
+#interface  .container{
+    width: 95%;
+    margin: 20px auto;
+    
+
+}
+#interface .navigation{
+    justify-content: left;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+    
+}
+
+#interface .navigation .toggle-btn {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+#interface .navigation .logout{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 20px;
+    
+}
+
+#interface .navigation .logout a {
+    text-decoration: none;
+    display: inline-block;
+    color: #505050;
+    padding: 0 5px;
+    font-size: 14px; 
+    
+}
+
+#interface .navigation .logout a:last-child:before {
+    
+    content: url(images/Vector\ \(20\).png);
+    margin-right: 8px;
+    align-self: center;
+    position: relative; 
+    top: 4px;
+    
+    
+}
+
+#interface .values {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px
+    
+
+    
+}
+#interface .values .val-box1, .val-box2, .val-box3, .val-box4 {
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px 
+    
+}
+
+#interface .values .val-box1 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+}
+#interface .values .text .welcome::after {
+    content: "🚀🚀";
+}
+
+#interface .values .val-box1 {
+    background-color: #0308621f;
+    color: #030762;
+}
+#interface .values .val-box2 {
+    background-color: rgba(109, 235, 109, 0.121);
+    color: #219653;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+#interface .values .val-box3 {
+    background: #f2984a21;
+    color: #F2994A;
+    display: flex;
+    justify-content: left;
+    padding-left: 30px;
+}
+#interface .values .val-box4 {
+    background: rgba(237, 2, 2, 0.152);
+    color: #FD0014;
+    display: flex;
+    justify-content: left;
+    padding-left: 30px;
+}
+
+#interface .values .val-box2 .icon2 {
+    background-color: white;
+    text-align: center;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+    
+}
+#interface .values .val-box3 .icon3 {
+    background-color: white;
+    text-align: center;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+    
+}
+
+
+#interface .values .val-box4 .icon4 {
+    background-color: white;
+    text-align: center;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+    
+}
+
+#interface .values .val-box2, .val-box3, .val-box4 .text {
+   text-align: left;   
+    
+}
+
+.contact-list {
+    color: #505050;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+.contact-list p a {
+    background: #F0F0F0;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #505050;
+}
+.container .board {
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+    color: #505050;
+    
+}
+
+tr {
+    border-bottom: 1px solid #eef0f3;
+}
+
+thead td {
+    font-size: 14px;
+    font-weight: 700;
+    font-style: bold;
+    padding: 15px;
+    background-color: #F0F0F0;
+}
+thead, tbody, tr td input {
+    margin-right: 20px;
+}
+tbody tr td {
+    padding: 10px 15px;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #E0E0E0;
+}
+
+tbody tr td a {
+    text-decoration: none;
+    color: #505050;
+}
+
+ #toggle-btn {
+    display: none;
+    flex-direction: column;
+    left: 10px;
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    justify-content: space-between;
+    top: 1.1rem;
+    background-color:#1e2276;
+    padding: 3px 3px;
+
+ }
+
+ #toggle-btn .bar {
+    width: 35px;
+    background: white;
+    height: 6px;
+    border-radius: 10px;
+    margin: 0 auto;
+ }
+
+
+
+
+@media (max-width: 1044px) {
+
+    #menu {
+        position: fixed;
+        width: 180px;
+        left: -180px;
+        transition: left 0.3s ease;
+        z-index: 1;
+    }
+
+
+    #interface {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #toggle-btn {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+    }
+
+    #menu.active {
+        left: 0px;
+    }
+    
+}
+
+@media (max-width: 765px) {
+    #interface .values {
+    
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px; 
+        row-gap: 30px;   
+        
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    #interface .values {
+    
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;   
+        
+    }  
+}
+
+@media (max-width: 400px) {
+
+    #interface .values {
+    
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;   
+        
+    }
+
+}
+

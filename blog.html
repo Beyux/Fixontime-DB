@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>Blog</title>
+</head>
+<body>
+
+    <main>
+        <section id="menu">
+            <div class="logo">
+                <img src="images/FixOnTime-whitetrans 1.png" alt="">
+            </div>
+    
+            <div class="items">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="e-learning.html">E-learning</a></li>
+                <li><a href="subsciber.html">Subscriber</a></li>
+            </div>
+    
+        </section>
+    
+        <div id="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <section id="interface">
+            <div class="navigation">
+                           
+               
+
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+                
+            </div>
+          <div class="container">
+                
+                <div class="blog">
+                    <h2>Blog Post</h2>
+                    <p><a href="newblog.html">+  New Blog Post</a></p>
+                    
+                </div>
+    
+                <div class="board">
+                    <div class="post">
+                        <div class="first-img">
+                            <img src="images/Rectangle 585 1.1.png" alt="">
+                            <div class="edit-del">
+                                <div class="delete">
+                                    <a class="delete-icon" href="#">Delete</a>
+                                </div>
+                                
+                                <div class="edit">
+                                    <a class="edit-icon" href="editblog.html">Edit</a>
+                                </div>
+                                 
+                            </div>
+                        </div>
+                        
+                        
+                        <h4>How to do home repair</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 586.png" alt="">
+                        <h4>Power safety tips at home</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (2).png" alt="">
+                        <h4>How to prevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (1).png" alt="">
+                        <h4>How to prevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+    
+                    <!-- row2 -->
+    
+                    <div class="post">
+                        <img src="images/Rectangle 585 1.1.png" alt="">
+                        <h4>How to do home repair</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 586.png" alt="">
+                        <h4>Power safety tips at home</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (2).png" alt="">
+                        <h4>How to orevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (1).png" alt="">
+                        <h4>How to prevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+    
+                    <!-- row 3 -->
+                    <div class="post">
+                        <img src="images/Rectangle 585 1.1.png" alt="">
+                        <h4>How to do home repair</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 586.png" alt="">
+                        <h4>Power safety tips at home</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (2).png" alt="">
+                        <h4>How to orevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (1).png" alt="">
+                        <h4>How to prevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+    
+                    <!-- row 4 -->
+                    <div class="post">
+                        <img src="images/Rectangle 585 1.1.png" alt="">
+                        <h4>How to do home repair</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 586.png" alt="">
+                        <h4>Power safety tips at home</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (2).png" alt="">
+                        <h4>How to orevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    <div class="post">
+                        <img src="images/Rectangle 587 (1).png" alt="">
+                        <h4>How to prevent power surge</h4>
+                        <p>24th Oct, 2021</p>
+                    </div>
+                    
+                    
+                </div>
+    
+            </div>  
+            
+        </section>
+    </main>
+    
+    <script>
+
+        const toggleBtn = document.getElementById('toggle-btn');
+        const menuBtn = document.getElementById('menu');
+    
+        toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+    
+        </script>
+
+</body>
+</html>

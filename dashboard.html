@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+
+</head>
+<body>
+    <main>
+    
+            <section class="menu" id="menu">
+                <div class="logo">
+                    <img src="images/FixOnTime-whitetrans 1.png" alt="">
+                </div>
+        
+                <div class="items">
+                    <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="e-learning.html">E-learning</a></li>
+                    <li><a href="subsciber.html">Subscriber</a></li>
+                </div>
+        
+            </section>
+        
+            <section id="interface">
+                <div class="navigation">
+                     
+                    <div id="toggle-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>   
+            
+                    <div class="logout">
+        
+                        <a href="#">Log out</a>
+                    </div>
+        
+                    
+                </div>
+                
+              <div class="container">
+                    <div class="values">
+                        
+                        <div class="val-box1">
+        
+                            <div class="text">
+                                <p class="welcome">Welcome</p>
+                                <h2>Admin</h2>
+                            </div>                 
+                        
+                        </div>
+                        <div class="val-box2">
+        
+                            <div class="icon2"> 
+                                <img src="images/Vector (17).png" alt=""> 
+                            </div>
+        
+                            <div class="text">
+                                <p>New Contact</p>
+                                <h2>20</h2>
+                            </div>                 
+                        
+                        </div>
+                        <div class="val-box3">
+        
+                            <div class="icon3"> 
+                                <img src="images/Vector (18).png" alt=""> 
+                            </div>
+        
+                            <div class="text">
+                                <p>Total Blog</p>
+                                <h2>40</h2>
+                            </div>                 
+                        
+                        </div>
+                        <div class="val-box4">
+        
+                            <div class="icon4"> 
+                                <img src="images/Vector (19).png" alt=""> 
+                            </div>
+        
+                            <div class="text">
+                                <p>E-learning</p>
+                                <h2>10</h2>
+                            </div>                 
+                        
+                        </div>
+                    </div>
+        
+                    <div class="contact-list">
+                        <h2>Contact</h2>
+                        <p><a href="#"> View all </a></p>
+                    </div>
+        
+                    <div class="board">
+                        
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                        Date
+                                    </td>
+                                    <td>Name</td>
+                                    <td>Company Name</td>
+                                    <td>Email</td>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                        24/10/2021
+                                    </td>
+                                    <td>Akinyemi Ayomide</td>
+                                    <td>Akins internation</td>
+                                    <td>okinsininternation@gmail.com</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                        24/10/2021
+                                    </td>
+                                    <td>Akinyemi Ayomide</td>
+                                    <td>Akins internation</td>
+                                    <td>okinsininternation@gmail.com</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                        24/10/2021
+                                    </td>
+                                    <td>Akinyemi Ayomide</td>
+                                    <td>Akins internation</td>
+                                    <td>okinsininternation@gmail.com</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                        24/10/2021
+                                    </td>
+                                    <td>Akinyemi Ayomide</td>
+                                    <td>Akins internation</td>
+                                    <td>okinsininternation@gmail.com</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                        24/10/2021
+                                    </td>
+                                    <td>Akinyemi Ayomide</td>
+                                    <td>Akins internation</td>
+                                    <td>okinsininternation@gmail.com</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                        24/10/2021
+                                    </td>
+                                    <td>Akinyemi Ayomide</td>
+                                    <td>Akins internation</td>
+                                    <td>okinsininternation@gmail.com</td>
+                                </tr>
+                                
+                                                            
+                            </tbody>
+                        </table>
+        
+                    </div>
+        
+                </div>  
+                
+            </section>
+    
+    </main>
+    
+
+    
+    <script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const menuBtn = document.getElementById('menu');
+
+    toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+    </script>
+</body>
+</html>
