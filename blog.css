@@ -117,12 +117,18 @@ main {
     box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
     
 }
+#interface .navigation .logout{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    text-decoration: none;
+
+}
 
 #interface .navigation .logout{
-    text-align: right;
-    padding: 20px;
+    padding: 12px;
     margin-right: 1%;
-    z-index: 4;
+
     
 }
 
