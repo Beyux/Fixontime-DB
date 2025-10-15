@@ -121,6 +121,7 @@ main {
     margin-right: 1%;
     text-align: right;
     padding: 20px;
+    z-index: 5;
     
 }
 
